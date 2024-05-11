@@ -1,0 +1,74 @@
+div {
+    height: 100px;
+    width: 100px;
+    background-color: aqua;
+    /* transition-property: all;
+    transition-duration: 2s;
+    transition-timing-function: ease-in;
+    transition-delay: 1s; */
+    /* transition: all 2s ease-in 1s; */
+    transition: all 2s ease-in;
+    position: absolute;
+    top: 100px;
+    left: 50px;
+    /* rotate : 360deg; */
+    /* transform: scale(0.5);depends on the coordinates(x,y,z) */
+    /* animation-name: colorAnimate; */
+    border-radius: 50%;
+    /* animation-duration: 2s; */
+    /* animation-timing-function: ease-in; */
+    /* animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse; */
+    animation: colorAnimate 2s ease-in 0s infinite alternate-reverse;
+}
+
+/* @keyframes colorAnimate {
+    from {
+        background-color: yellow;
+        left: 0px;
+    }
+
+    to {
+        background-color: brown;
+        left: 200px;
+    }
+} */
+@keyframes colorAnimate {
+    0% {
+        background-color: yellow;
+        left: 0px;
+    }
+    50%{
+        background-color: black;
+        left: 200px;
+    }
+    100% {
+        background-color: brown;
+        left: 200px;
+    }
+}
+
+div:hover {
+    /* background-color: black;
+    color: white;
+    font-size: 20px; */
+    /* transform: scaleY(2); */
+    /* transform: translate(200px);may be diagonal */
+    /* any transform property may apply */
+    /* transform: skew(90deg)bending the shapes like animation; */
+
+
+}
+
+
+
+/* div:active{              after cursor click;
+    background-color: red;
+} */
+
+
+/* animation direction has four states which are:
+1.move 2.reverse 3.alternate 4.re-alternate */
+
+/* sequence is given above */

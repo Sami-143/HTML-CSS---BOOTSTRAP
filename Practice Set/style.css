@@ -1,0 +1,28 @@
+.navbar{
+    background-color: red;
+    display: flex;
+    justify-content: space-evenly;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+li{
+    list-style-type: none;
+}
+
+.inner{
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    align-self: flex-start;/* has high priority in css */
+}
+.outer{
+    height: 400px;
+    width: 400px;
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
